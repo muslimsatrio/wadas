@@ -1,2 +1,2 @@
-# LAM Dashboard
+# Wadas Dashboard
 
