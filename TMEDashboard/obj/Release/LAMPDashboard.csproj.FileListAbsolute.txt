@@ -1,0 +1,42 @@
+C:\Project\LAM-Dashboard\TMEDashboard\bin\LAMPDashboard.dll.config
+C:\Project\LAM-Dashboard\TMEDashboard\bin\LAMPDashboard.dll
+C:\Project\LAM-Dashboard\TMEDashboard\bin\LAMPDashboard.pdb
+C:\Project\LAM-Dashboard\TMEDashboard\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\LAM-Dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Project\LAM-Dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Project\LAM-Dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Project\LAM-Dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Project\LAM-Dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Project\LAM-Dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Project\LAM-Dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Project\LAM-Dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Project\LAM-Dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Project\LAM-Dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Project\LAM-Dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Project\LAM-Dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Project\LAM-Dashboard\TMEDashboard\obj\Release\LAMPDashboard.csproj.CoreCompileInputs.cache
+C:\Project\LAM-Dashboard\TMEDashboard\obj\Release\LAMPDashboard.csproj.CopyComplete
+C:\Project\LAM-Dashboard\TMEDashboard\obj\Release\LAMPDashboard.dll
+C:\Project\LAM-Dashboard\TMEDashboard\obj\Release\LAMPDashboard.pdb
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\LAMPDashboard.dll.config
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\LAMPDashboard.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\LAMPDashboard.pdb
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\obj\Release\LAMPDashboard.csprojAssemblyReference.cache
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\obj\Release\LAMPDashboard.csproj.CoreCompileInputs.cache
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\obj\Release\LAMPDashboard.csproj.CopyComplete
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\obj\Release\LAMPDashboard.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\obj\Release\LAMPDashboard.pdb
+C:\Project\LAM-Dashboard\TMEDashboard\obj\Release\LAMPDashboard.csprojAssemblyReference.cache

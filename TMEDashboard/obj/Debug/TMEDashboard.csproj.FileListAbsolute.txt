@@ -1,0 +1,172 @@
+C:\System\TMEDashboard\TMEDashboard\bin\TMEDashboard.dll.config
+C:\System\TMEDashboard\TMEDashboard\bin\TMEDashboard.dll
+C:\System\TMEDashboard\TMEDashboard\bin\TMEDashboard.pdb
+C:\System\TMEDashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\System\TMEDashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\System\TMEDashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\System\TMEDashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\System\TMEDashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\System\TMEDashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\System\TMEDashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\System\TMEDashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\System\TMEDashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\System\TMEDashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\System\TMEDashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\System\TMEDashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\System\TMEDashboard\TMEDashboard\obj\Debug\TMEDashboard.csprojResolveAssemblyReference.cache
+C:\System\TMEDashboard\TMEDashboard\obj\Debug\TMEDashboard.dll
+C:\System\TMEDashboard\TMEDashboard\obj\Debug\TMEDashboard.pdb
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\TMEDashboard.dll.config
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\TMEDashboard.dll
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\TMEDashboard.pdb
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.csprojResolveAssemblyReference.cache
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.dll
+C:\Users\muslim.satrio\Documents\MasterProject\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.pdb
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\TMEDashboard.dll.config
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\TMEDashboard.dll
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\TMEDashboard.pdb
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.csprojResolveAssemblyReference.cache
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.dll
+C:\Users\muslim.satrio\Documents\Master\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.pdb
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\TMEDashboard.dll.config
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\TMEDashboard.dll
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\TMEDashboard.pdb
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.csprojResolveAssemblyReference.cache
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.dll
+C:\Users\muslim.satrio\Documents\Master\Master\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.pdb
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\TMEDashboard.dll.config
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\TMEDashboard.dll
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\TMEDashboard.pdb
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.csprojAssemblyReference.cache
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.csproj.CoreCompileInputs.cache
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.csproj.CopyComplete
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.dll
+C:\Users\muslim.satrio\Documents\GitHub\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.pdb
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\TMEDashboard.dll.config
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\TMEDashboard.dll
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\TMEDashboard.pdb
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.csprojAssemblyReference.cache
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.csproj.CoreCompileInputs.cache
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.csproj.CopyComplete
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.dll
+C:\Users\muslim.satrio\Documents\Muslim\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.pdb
+C:\Project\TME-Dashboard\TMEDashboard\bin\TMEDashboard.dll.config
+C:\Project\TME-Dashboard\TMEDashboard\bin\TMEDashboard.dll
+C:\Project\TME-Dashboard\TMEDashboard\bin\TMEDashboard.pdb
+C:\Project\TME-Dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Project\TME-Dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Project\TME-Dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Project\TME-Dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Project\TME-Dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Project\TME-Dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Project\TME-Dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Project\TME-Dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Project\TME-Dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Project\TME-Dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Project\TME-Dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Project\TME-Dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Project\TME-Dashboard\TMEDashboard\obj\Debug\TMEDashboard.dll
+C:\Project\TME-Dashboard\TMEDashboard\obj\Debug\TMEDashboard.pdb
+C:\Project\TME-Dashboard\TMEDashboard\obj\Debug\TMEDashboard.csprojResolveAssemblyReference.cache
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\TMEDashboard.dll.config
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\TMEDashboard.dll
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\TMEDashboard.pdb
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.csprojAssemblyReference.cache
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.csproj.CoreCompileInputs.cache
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.csproj.CopyComplete
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.dll
+C:\Users\muslim.satrio\Documents\New folder\tme-dashboard\TMEDashboard\obj\Debug\TMEDashboard.pdb
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\TMEDashboard.dll.config
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\TMEDashboard.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\TMEDashboard.pdb
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\obj\Debug\TMEDashboard.csprojResolveAssemblyReference.cache
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\obj\Debug\TMEDashboard.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\obj\Debug\TMEDashboard.pdb

@@ -1,0 +1,110 @@
+<table id="tabel-npdsum-sales" class="table table-hover table-striped table-bordered tabelNpd">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-md-center" rowspan="2">NPD</th>
+                                            <th class="text-center" colspan="7">SALES (IN MDR)</th>
+                                        </tr>
+
+
+
+                                        <tr>
+                                                <th class="text-md-center">2020</th>
+                                                <th class="text-md-center">2021</th>
+                                                <th class="text-md-center">2022</th>
+                                                <th class="text-md-center">2023</th>
+                                                <th class="text-md-center">2024</th>
+
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>AFFILIATES</td>
+
+                                                <td class="text-right">
+                                                </td>
+                                                <td class="text-right">
+                                                </td>
+                                                <td class="text-right">
+                                                </td>
+                                                <td class="text-right">
+1.500                                                </td>
+                                                <td class="text-right">
+2.250                                                </td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>TM</td>
+
+                                                <td class="text-right">
+72                                                </td>
+                                                <td class="text-right">
+1.902                                                </td>
+                                                <td class="text-right">
+2.801                                                </td>
+                                                <td class="text-right">
+4.689                                                </td>
+                                                <td class="text-right">
+8.418                                                </td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>P&amp;G</td>
+
+                                                <td class="text-right">
+170                                                </td>
+                                                <td class="text-right">
+147                                                </td>
+                                                <td class="text-right">
+220                                                </td>
+                                                <td class="text-right">
+332                                                </td>
+                                                <td class="text-right">
+455                                                </td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>3PE</td>
+
+                                                <td class="text-right">
+72                                                </td>
+                                                <td class="text-right">
+900                                                </td>
+                                                <td class="text-right">
+1.395                                                </td>
+                                                <td class="text-right">
+1.950                                                </td>
+                                                <td class="text-right">
+2.190                                                </td>
+
+
+                                            </tr>
+
+                                        <tr>
+                                            <td>Total Sales </td>
+                                            <td class="text-right">314</td>
+                                            <td class="text-right">2.949</td>
+                                            <td class="text-right">4.416</td>
+                                            <td class="text-right">8.472</td>
+                                            <td class="text-right">13.313</td>
+
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>% Growth </td>
+                                            <td class="text-right">0 &nbsp; %</td>
+                                            <td class="text-right">8&nbsp; %</td>
+                                            <td class="text-right">0&nbsp; %</td>
+                                            <td class="text-right">1&nbsp; %</td>
+                                            <td class="text-right">1&nbsp; %</td>
+
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>

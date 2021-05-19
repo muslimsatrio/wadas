@@ -1,0 +1,56 @@
+﻿@using TMEDashboard.Models
+@{
+    ViewBag.Title = "Index";
+    
+
+}
+
+
+
+<!-- page content -->
+<div class="right_col" role="main">
+    <!-- top tiles -->
+    <div class="row" style="display: inline-block;">
+
+     
+
+        <div class="col-md-12">
+            <div class="x_panel tile">
+                <div class="x_title">
+                    <h2>Summary</h2>
+
+                    
+
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <div class="x_content">
+                    <div class="col-lg-3 text-center">
+                        <a href="~/Home/Detail_Home?status=1">
+                            <h5 class="text-center"><strong>Total Transaksi Harian</strong></h5>
+
+                            <div class="tme-gauge gauge-pospecting text-center">
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+           
+        </div>
+
+
+    </div>
+    </div>
+
+    @section jsSection {
+        
+        <script>
+            $('.toast').toast('show');
+        </script>
+        }

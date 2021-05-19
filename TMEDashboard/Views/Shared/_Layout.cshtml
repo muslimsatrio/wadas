@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Wadas | Wadas Dashboard  </title>
+
+    <!-- Bootstrap -->
+    <link href="~/content/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="~/content/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="~/content/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="~/content/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="~/content/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="~/content/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="~/content/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="~/content/starrr/dist/starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="~/content/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Datatables -->
+
+    <link href="~/content/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="~/content/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="~/content/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="~/content/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="~/content/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <link href="~/content/select.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
+    <!-- Multiple fixed columns -->
+    <link href="~/content/datatables.net-fixcol/css/fixcol.min.css" rel="stylesheet">
+    <link href="~/content/datatables.net-multiplefixedcol/css/multiplefixedcol.min.css" rel="stylesheet">
+    <!-- Muslim-->
+    @*<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet" />*@
+
+
+
+
+
+    <!-- Custom Theme Style -->
+    <link href="~/content/custom.css" rel="stylesheet">
+
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+
+        function addLoad() {
+            $body = $("body");
+            $body.addClass("loading");
+        }
+
+        function closeLoad() {
+            $body = $("body");
+            $body.removeClass("loading");
+        }
+    </script>
+
+
+
+
+</head>
+
+<body class="nav-md">
+
+    <div class="modal-loading"><!-- Place at bottom of page --></div>
+    <div class="container body">
+
+        <div class="modal fade" id="loading">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Please wait | <small class="modal-title">Data processing ...</small></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="~/home" class="site_title"><i class="fa fa-pie-chart"></i> <span>Wadas Dashboard</span></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="~/Assets/logo.png" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome,</span>
+                            <h2>@Session["username"].ToString().Replace(".", " ")</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+
+                    <br />
+
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        @if (Convert.ToString(Session["roles"]) == "2")
+                        {
+                            <div class="menu_section">
+
+                                <h3>General</h3>
+                                <ul class="nav side-menu">
+                                    <li>
+                                        <a href="~/home"><span class="glyphicon glyphicon-home"></span> &nbsp;Home </a>
+                                    </li>
+                                   
+
+
+
+                                </ul>
+                            </div>
+                        }
+
+                        else if (Convert.ToString(Session["roles"]) == "3")
+                        {
+                            <div class="menu_section">
+
+                                <h3>General</h3>
+                                <ul class="nav side-menu">
+                                    <li>
+                                        <a href="~/home"><span class="glyphicon glyphicon-home"></span> &nbsp;Home </a>
+                                    </li>
+                                 
+                                  
+
+
+
+
+                                </ul>
+                            </div>
+                        }
+
+                        else if (Convert.ToString(Session["roles"]) == "1")
+                        {
+                            <div class="menu_section">
+
+                                <h3>Admin</h3>
+                                <ul class="nav side-menu">
+                                    <li>
+                                        <a href="~/home"><span class="glyphicon glyphicon-home"></span> &nbsp;Home </a>
+                                    </li>
+
+
+
+
+                                </ul>
+                            </div>
+                        }
+                       
+
+
+
+
+                    </div>
+                    <!-- /sidebar menu -->
+
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <nav class="nav navbar-nav">
+                        <ul class=" navbar-right">
+                            <li class="nav-item dropdown open" style="padding-left: 15px;">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    @Session["username"].ToString().Replace(".", " ")
+                                </a>
+                                <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                                    @*<a class="dropdown-item" href="javascript:;"> Profile</a>
+                                        <a class="dropdown-item" href="javascript:;">Help</a>*@
+                                    <a class="dropdown-item" href="~/login/logout"><i class="fa fa-sign-out pull-right"></i> Logout</a>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            @RenderBody()
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    Wadas | Muslim &copy; 2021.
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="~/content/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/content/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="~/content/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="~/content/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="~/content/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="~/content/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="~/content/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="~/content/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="~/content/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="~/content/Flot/jquery.flot.js"></script>
+    <script src="~/content/Flot/jquery.flot.pie.js"></script>
+    <script src="~/content/Flot/jquery.flot.time.js"></script>
+    <script src="~/content/Flot/jquery.flot.stack.js"></script>
+    <script src="~/content/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="~/content/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="~/content/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="~/content/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="~/content/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="~/content/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="~/content/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="~/content/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="~/content/moment/min/moment.min.js"></script>
+    <script src="~/content/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="~/content/jquery-knob/dist/jquery.knob.min.js"></script>
+    <!-- Muslim-->
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="~/content/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="~/content/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="~/content/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="~/content/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="~/content/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="~/content/select2/dist/js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="~/content/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="~/content/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="~/content/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="~/content/starrr/dist/starrr.js"></script>
+
+    <script src="~/content/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/content/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="~/content/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/content/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="~/content/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="~/content/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/content/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="~/content/dataTables.select.min.js"></script>
+    <script src="~/content/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <script src="~/content/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="~/content/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="~/content/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/content/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="~/content/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="~/content/jszip/dist/jszip.min.js"></script>
+    <script src="~/content/pdfmake/build/pdfmake.min.js"></script>
+    <script src="~/content/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Multiple fixed columns -->
+    <script src="~/content/datatables.net-fixcol/js/fixcol.min.js"></script>
+
+    <!-- ECharts -->
+    <script src="~/content/echarts/dist/echarts.min.js"></script>
+
+
+    <!-- jQuery Smart Wizard -->
+    <script src="~/content/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="~/Scripts/custom.js"></script>
+    <!--Muslim custom-->
+    @*<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+        <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>*@
+    @* OUR OWN SCRIPT *@
+    <script src="~/Scripts/script.js"></script>
+    @RenderSection("jsSection", false)
+    <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569818907/jquery.table2excel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+
+
+</body>
+</html>

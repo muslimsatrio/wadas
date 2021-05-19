@@ -1,0 +1,40 @@
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\LAMPDashboard.dll.config
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\LAMPDashboard.dll
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\LAMPDashboard.pdb
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\obj\Debug\LAMPDashboard.csprojResolveAssemblyReference.cache
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\obj\Debug\LAMPDashboard.dll
+C:\Users\dhika.prathama\Desktop\DAP\LAMP Dashboard\LAMP Dashboard\TMEDashboard\obj\Debug\LAMPDashboard.pdb
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\LAMPDashboard.dll.config
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\LAMPDashboard.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\LAMPDashboard.pdb
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\obj\Debug\LAMPDashboard.csproj.CoreCompileInputs.cache
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\obj\Debug\LAMPDashboard.csproj.CopyComplete
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\obj\Debug\LAMPDashboard.dll
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\obj\Debug\LAMPDashboard.pdb
+C:\Users\muslim.satrio\Documents\Lamp Dashboard\lam-dashboard\TMEDashboard\obj\Debug\LAMPDashboard.csprojAssemblyReference.cache

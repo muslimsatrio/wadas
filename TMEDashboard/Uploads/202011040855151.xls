@@ -1,0 +1,151 @@
+<table border='2px'><tr><th class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 18px;" aria-sort="ascending" aria-label="No.: activate to sort column descending" width="10">No.</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 98px;" aria-label="Activation Name: activate to sort column ascending" width="100">Activation Name</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 79px;" aria-label="Area: activate to sort column ascending" width="100">Area</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 81px;" aria-label="Brand: activate to sort column ascending" width="100">Brand</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 96px;" aria-label="Activation Type: activate to sort column ascending" width="100">Activation Type</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 116px;" aria-label="Activation Start Date: activate to sort column ascending" width="100">Activation Start Date</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 109px;" aria-label="Activation End Date: activate to sort column ascending" width="100">Activation End Date</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 100px;" aria-label="Activation Budget: activate to sort column ascending" width="100">Activation Budget</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 97px;" aria-label="Activation Detail: activate to sort column ascending" width="100">Activation Detail</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 82px;" aria-label="Status: activate to sort column ascending" width="100">Status</th></tr><tr>
+                                                        <td class="text-center sorting_1" width="10">11</td>
+                                                        <td>promo1010</td>
+                                                        <td>PT. APL Solo</td>
+                                                        <td>NATUR-E 300</td>
+                                                        <td>ATL/DIGITAL</td>
+                                                        <td class="text-center">30 Sep 2020</td>
+                                                        <td class="text-center">29 Oct 2020</td>
+
+                                                        <td class="text-right align-middle"><span class="float-left">Rp</span>90.000</td>
+
+                                                        <td>tes</td>
+                                                        <td>Approval Head Lamp</td>
+                                                        
+
+                                                    </tr>
+                                                        <td class="text-center sorting_1" width="10">12</td>
+                                                        <td>promo1010</td>
+                                                        <td>PT. APL Solo</td>
+                                                        <td>NATUR-E 300</td>
+                                                        <td>Branding</td>
+                                                        <td class="text-center">09 Oct 2020</td>
+                                                        <td class="text-center">30 Oct 2020</td>
+
+                                                        <td class="text-right align-middle"><span class="float-left">Rp</span>1.000</td>
+
+                                                        <td>asd</td>
+                                                        <td>Approval Head Lamp</td>
+                                                        
+
+                                                    </tr>
+                                                        <td class="text-center sorting_1" width="10">13</td>
+                                                        <td>promo1010</td>
+                                                        <td>PT. APL Solo</td>
+                                                        <td>NATUR-E 300</td>
+                                                        <td>BTL</td>
+                                                        <td class="text-center">02 Oct 2020</td>
+                                                        <td class="text-center">23 Oct 2020</td>
+
+                                                        <td class="text-right align-middle"><span class="float-left">Rp</span>20.000</td>
+
+                                                        <td>asd</td>
+                                                        <td>Approval Head Lamp</td>
+                                                        
+
+                                                    </tr>
+                                                        <td class="text-center sorting_1" width="10">14</td>
+                                                        <td>muslim</td>
+                                                        <td>PT. APL Cirebon</td>
+                                                        <td>NATUR-E 300</td>
+                                                        <td>BTL</td>
+                                                        <td class="text-center">15 Oct 2020</td>
+                                                        <td class="text-center">16 Oct 2020</td>
+
+                                                        <td class="text-right align-middle"><span class="float-left">Rp</span>800.000</td>
+
+                                                        <td>uji</td>
+                                                        <td>Approval Head Lamp</td>
+                                                        
+
+                                                    </tr>
+                                                        <td class="text-center sorting_1" width="10">15</td>
+                                                        <td>promo</td>
+                                                        <td>PT. APL Cirebon</td>
+                                                        <td>NATUR-E 300</td>
+                                                        <td>BTL</td>
+                                                        <td class="text-center">15 Oct 2020</td>
+                                                        <td class="text-center">28 Oct 2020</td>
+
+                                                        <td class="text-right align-middle"><span class="float-left">Rp</span>9.090</td>
+
+                                                        <td>promo1010</td>
+                                                        <td>Approval Head Lamp</td>
+                                                        
+
+                                                    </tr>
+                                                        <td class="text-center sorting_1" width="10">16</td>
+                                                        <td>promo</td>
+                                                        <td>PT. APL Solo</td>
+                                                        <td>NATUR-E 300</td>
+                                                        <td>BTL</td>
+                                                        <td class="text-center">29 Oct 2020</td>
+                                                        <td class="text-center">22 Oct 2020</td>
+
+                                                        <td class="text-right align-middle"><span class="float-left">Rp</span>80.000</td>
+
+                                                        <td>promo tes</td>
+                                                        <td>Approval Head Lamp</td>
+                                                        
+
+                                                    </tr>
+                                                        <td class="text-center sorting_1" width="10">17</td>
+                                                        <td>muslim</td>
+                                                        <td>PT. APL Cirebon</td>
+                                                        <td>NATUR-E 300</td>
+                                                        <td>BTL</td>
+                                                        <td class="text-center">15 Oct 2020</td>
+                                                        <td class="text-center">21 Oct 2020</td>
+
+                                                        <td class="text-right align-middle"><span class="float-left">Rp</span>2.000</td>
+
+                                                        <td>bisa</td>
+                                                        <td>Approval Head Lamp</td>
+                                                        
+
+                                                    </tr>
+                                                        <td class="text-center sorting_1" width="10">18</td>
+                                                        <td>tes faisal</td>
+                                                        <td>PT. APL Cirebon</td>
+                                                        <td>NATUR-E 300</td>
+                                                        <td>BTL</td>
+                                                        <td class="text-center">08 Oct 2020</td>
+                                                        <td class="text-center">21 Oct 2020</td>
+
+                                                        <td class="text-right align-middle"><span class="float-left">Rp</span>80.000</td>
+
+                                                        <td>tes</td>
+                                                        <td>Approval Head Lamp</td>
+                                                        
+
+                                                    </tr>
+                                                        <td class="text-center sorting_1" width="10">19</td>
+                                                        <td>tes faisal</td>
+                                                        <td>PT. APL Cirebon</td>
+                                                        <td>NATUR-E 300</td>
+                                                        <td>BTL</td>
+                                                        <td class="text-center">08 Oct 2020</td>
+                                                        <td class="text-center">21 Oct 2020</td>
+
+                                                        <td class="text-right align-middle"><span class="float-left">Rp</span>80.000</td>
+
+                                                        <td>tes</td>
+                                                        <td>Approval Head Lamp</td>
+                                                        
+
+                                                    </tr>
+                                                        <td class="text-center sorting_1" width="10">20</td>
+                                                        <td>coba upload</td>
+                                                        <td>PT. APL Cirebon</td>
+                                                        <td>ALLERIN</td>
+                                                        <td>Branding</td>
+                                                        <td class="text-center">13 Oct 2020</td>
+                                                        <td class="text-center">21 Oct 2020</td>
+
+                                                        <td class="text-right align-middle"><span class="float-left">Rp</span>9.999</td>
+
+                                                        <td>test upload</td>
+                                                        <td>Approval Head Lamp</td>
+                                                        
+
+                                                    </tr></table>

@@ -1,0 +1,540 @@
+﻿@using TMEDashboard.Models
+@{
+    ViewBag.Title = "Index";
+    List<UserMatrixModel> matrix = ViewBag.UserMatrix;
+}
+<link href="~/content/datatables.net-fixcol/css/jquery.dataTables.min.css" rel="stylesheet">
+<style>
+    tbl-asd {
+        margin: 0 !important;
+    }
+
+    .th-asd, .td-asd {
+        white-space: nowrap;
+    }
+
+    .wrapper-asd.dataTables_wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    /*
+     * Comma Text Box Price Style
+     */
+    input[type='text'].commaTextbox {
+        padding-left: 1.9em;
+        text-align: right;
+    }
+
+    .commaTextbox-container {
+        position: relative;
+        color: #73879C;
+    }
+
+    .commaTextbox-container, .commaTextbox {
+        font-family: sans-serif;
+    }
+
+    .commaTextbox-currency {
+        position: absolute;
+        font-size: 15px;
+        line-height: 2.5em;
+        left: .5em;
+    }
+
+    .yearpicker-container {
+        position: absolute;
+        color: #333;
+        width: 280px;
+        border: 1px solid #ced4da;
+        border-radius: 3px;
+        font-size: 1rem;
+        background-color: #fff
+    }
+
+    .yearpicker-header {
+        display: flex;
+        width: 100%;
+        height: 2.5rem;
+        border-bottom: 1px solid #444;
+        align-items: center;
+        justify-content: space-around
+    }
+
+    .yearpicker-next, .yearpicker-prev {
+        user-select: none;
+        cursor: pointer;
+        font-size: 2rem
+    }
+
+        .yearpicker-next:hover, .yearpicker-prev:hover {
+            color: #0094ff
+        }
+
+    .yearpicker-year {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: .5rem
+    }
+
+    .yearpicker-items {
+        list-style: none;
+        padding: 1rem .5rem;
+        flex: 0 0 33.3%;
+        width: 100%
+    }
+
+        .yearpicker-items:hover {
+            background-color: #EEE;
+            color: #555;
+            cursor: pointer
+        }
+
+        .yearpicker-items.selected {
+            color: #333
+        }
+
+    .hide {
+        display: none
+    }
+
+    .yearpicker-items.disabled {
+        pointer-events: none;
+        color: #bbb
+    }
+
+    .sku-drop {
+        width: 200px !important;
+    }
+</style>
+
+
+
+<div class="right_col" role="main">
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h3>Report Lamp<small> </small></h3>
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+        <br />
+
+
+        <div>
+
+            <div class="clearfix"></div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="task" role="tabpanel" aria-labelledby="task-tab">
+
+                    <div class="clearfix"></div>
+                    <table id="tabel-filter" class="table table-striped table-bordered" style="width:60%">
+
+                        <tr>
+                            <td>Area</td>
+                            <td width="50%" id="dropdown-table-2"></td>
+                        </tr>
+                        <tr>
+
+                            <td>Brand</td>
+                            <td width="50%" id="dropdown-table-3"></td>
+                        </tr>
+                       
+                    </table>
+
+                    <table id="example" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+
+
+                            <tr>
+
+                                <th width="10">No.</th>
+                                <th width="10">Tahun</th>
+                                <th width="100">Area</th>
+                                <th width="100">Brand</th>
+                                <th width="100">LAMP</th>
+                                <th class="sum" width="100">Allocation Budget</th>
+                                <th class="sum" width="100">Budget Usage</th>
+                                <th class="sum" width="100">Available Budget</th>
+                                <th width="100">END Date</th>
+                                <th width="30"></th>
+                            </tr>
+
+                        </thead>
+
+
+
+                        <tbody id="download-forms-table-tbody">
+                            @{ int i = 1; }
+                            @foreach (var item in matrix)
+                            {
+                                <tr>
+                                    <td class="text-center" width="10">@i</td>
+
+
+                                    <td class="text-center">@item.tahun</td>
+                                    <td>@item.area_name</td>
+                                    <td>@item.brand_name</td>
+                                    <td>@item.lamp_name</td>
+                                    <td class="text-right align-middle">@Convert.ToDecimal(item.budget).ToString("#,##0")</td>
+                                    <td class="text-right align-middle">@Convert.ToDecimal(item.budget_terpakai).ToString("#,##0")</td>
+                                    <td class="text-right align-middle">@Convert.ToDecimal(item.budget_tersedia).ToString("#,##0")</td>
+
+                                    <td>
+                                        @if (item.List_Activation.Count() > 0)
+                                        {
+                                            <ul>
+                                                @foreach (var item_act in item.List_Activation)
+                                                {
+                                                    <li> <a href="#">@Convert.ToDateTime(item_act.activation_end_date).ToString("dd MMMM yyyy")</a> </li>
+                                                }
+                                            </ul>
+                                        }
+                                    </td>
+                                    <td class="text-center">
+                                        <a class="badge badge-primary" href="~/ReportLamp/detailreportlamp?id=@item.user_matrix_id&area=@item.area&brand=@item.brand&lamp=@item.lamp">Detail</a>
+
+                                    </td>
+                                </tr>
+                                { i = i + 1; }
+                            }
+
+
+                        </tbody>
+
+                        <tfoot align="right">
+                            <tr>
+                                <th colspan="3" class="text-center"></th>
+                                <th class="text-right Int"></th>
+                                <th class="text-center">Total</th>
+                                <th class="text-right Int"></th>
+                                <th class="text-right Int"></th>
+                                <th class="text-right Int"></th>
+                                <th class="text-right Int"></th>
+                                <th class="text-right Int"></th>
+
+                            </tr>
+                        </tfoot>
+                    </table>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="clearfix"></div>
+            <br />
+
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+@section jsSection {
+    <script type="text/javascript" src="~/Scripts/yearpicker.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Apply plugin to our input boxes
+            $('.rupiah').commaTextbox(1)
+                .addClass('commaTextbox')
+                .wrap("<div class='commaTextbox-container'></div>")
+                .parent().prepend("<div class='commaTextbox-currency'>Rp</div>");
+
+            $('.input-number-format').commaTextbox();
+            $('.tme-p-year').yearpicker({
+                //year: (new Date).getFullYear(),
+                startYear: 2010,
+                endYear: (new Date).getFullYear() + 20
+            });
+
+            var year = 2020;
+            $("#input-year-1").on('blur', function () {
+                setTimeout(function () {
+                    year = parseInt($("#input-year-1").val());
+                    $('.tme-p-year').each(function () {
+                        $(this).val(year);
+                        year = year + 1;
+                    });
+                }, 1000);
+
+            });
+
+            $(".tme-select2").select2({ width: '100%' });
+            // tme-select2-sku
+            $(".tme-select2-sku").select2({ width: '100%', dropdownCssClass: 'sku-drop' });
+            $(".tme-select2-ns").select2({ minimumResultsForSearch: -1, width: '100%' });
+
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $("#project-add-new-sku").on("click", function () {
+                $sku1 = $("#sku-1 option:selected").text();
+                $sku2 = $("#sku-2").val();
+                $sku3 = $("#sku-3 option:selected").text();
+                $sku4 = $("#sku-4").val();
+                $sku5 = $("#sku-5 option:selected").text();
+                //alert("Click" + $sku1 + $sku2);
+                textAreaSku = $("#add-project-detail-sku");
+                result = textAreaSku.val();
+                console.log(result);
+                if (result !== "") {
+                    result += "\n";
+                }
+                result += $sku1 + " " + $sku2 + " " + $sku3 + " X " + $sku4 + " " + $sku5;
+                textAreaSku.val(result);
+            });
+
+            $("#project-add-clear-sku-opt").on("click", function () {
+                $("#sku-1").val(null).trigger('change')
+                $("#sku-2").val("");
+                $("#sku-3").val(null).trigger('change')
+                $("#sku-4").val("");
+                $("#sku-5").val(null).trigger('change')
+            });
+        });
+    </script>
+    <script type="text/javascript">
+
+        var table = $("#example").DataTable({
+
+            "initComplete": function (settings, json) {
+                var api = this.api();
+                CalculateTableSummary(this);
+
+
+                    this.api().columns().every(function () {
+                        var column = this;
+                        var index = column[0][0];
+                        //console.log(column[0][0]);
+                        var select = $('<select class="form-control"><option value=""></option></select>')
+                            .appendTo($("#dropdown-table-" + index).empty())
+                            .on('change', function () {
+                                var val = $.fn.dataTable.util.escapeRegex(
+                                    $(this).val()
+                                );
+
+                                column
+                                    .search(val ? '^' + val + '$' : '', true, false)
+                                    .draw();
+                            });
+
+                        column.data().unique().sort().each(function (d, j) {
+                            select.append('<option value="' + d + '">' + d + '</option>')
+                        });
+                    });
+            },
+            "footerCallback": function (row, data, start, end, display) {
+                console.log('aaya');
+                var api = this.api(), data;
+                CalculateTableSummary(this);
+                return;
+            },
+            "pageLength": 1000
+            ,
+            dom: 'Bfrtip',
+            buttons: [
+                { extend: 'copyHtml5', footer: true },
+                { extend: 'excelHtml5', footer: true },
+                { extend: 'csvHtml5', footer: true },
+                { extend: 'pdfHtml5', footer: true }
+            ]
+        });
+
+
+
+        function CalculateTableSummary(table) {
+            try {
+
+                var intVal = function (i) {
+                    return typeof i === 'string' ?
+                        i.replace(/[\$.]/g, '') * 1 :
+                        typeof i === 'number' ?
+                            i : 0;
+                };
+
+                var api = table.api();
+                api.columns(".sum").eq(0).each(function (index) {
+                    var column = api.column(index, { page: 'current' });
+
+                    var sum = column
+                        .data()
+                        .reduce(function (a, b) {
+                            //return parseInt(a, 10) + parseInt(b, 10);
+                            return intVal(a) + intVal(b);
+                        }, 0);
+
+
+                    console.log(sum);
+
+                    if ($(column.footer()).hasClass("Int")) {
+                        $(column.footer()).html(addCommas(sum.toFixed(0)));
+                    } else {
+                        $(column.footer()).html('' + sum.toFixed(2));
+                    }
+
+                });
+            } catch (e) {
+                console.log('Error in CalculateTableSummary');
+                console.log(e)
+            }
+        }
+        function addCommas(nStr) {
+            nStr += '';
+            x = nStr.split('.');
+            x1 = x[0];
+            x2 = x.length > 1 ? '.' + x[1] : '';
+            var rgx = /(\d+)(\d{3})/;
+            while (rgx.test(x1)) {
+                x1 = x1.replace(rgx, '$1' + ',' + '$2');
+            }
+            return x1 + x2;
+        }
+
+    </script>
+    <script>
+        //Filtering region dropdown
+        $('body').on("change", '#areaDropdown', function () {
+            var filter, table, tr, td, i;
+            filter = $(this).val();
+            table = document.getElementById("download-forms-table-tbody");
+            tr = table.getElementsByTagName("tr");
+            if (filter == "All") {
+                // Loop through all table rows, and show anyrows that is hidden
+                for (i = 0; i < tr.length; i++) {
+                    tr[i].style.display = "";
+                }
+            } else {
+                // Loop through all table rows, and hide those who don't match the search query
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[2];
+                    if (td) {
+                        if (td.innerHTML.indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    } else {
+                        var a = "No Records Found!!!";
+                    }
+                }
+            }
+        });
+
+        //Filtering role dropdown
+        $('body').on("change", '#BrandDropdown', function () {
+            var filter, table, tr, td, i;
+            var regionval = $('#areaDropdown :selected').val();
+            filter = $(this).val();
+            table = document.getElementById("download-forms-table-tbody");
+            tr = table.getElementsByTagName("tr");
+            if (filter == "All") {
+                // Loop through all table rows, and show anyrows that is hidden
+                for (i = 0; i < tr.length; i++) {
+                    tr[i].style.display = "";
+                }
+            } else {
+                // Loop through all table rows, and hide those who don't match the search query
+                for (i = 0; i < tr.length; i++) {
+                    var td1 = '';
+                    if (regionval != 'All') {
+                        td1 = tr[i].getElementsByTagName("td")[2];
+                        console.log(td1)
+                    }
+                    td = tr[i].getElementsByTagName("td")[3];
+                    console.log('td1' + td1)
+                    if (td) {
+                        if (td.innerHTML.indexOf(filter) > -1) {
+                            if (td1 != '') {
+                                if (td1.innerHTML.indexOf(regionval) > -1) {
+                                    tr[i].style.display = "";
+                                } else {
+
+                                    tr[i].style.display = "none";
+                                }
+                            }
+                            if (td1 == '') {
+                                tr[i].style.display = "";
+                            }
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+        });
+
+        ////Show active inactive users
+        //$('body').on("change", '#associateStatusDropdown', function () {
+        //    var filter, table, tr, td, i;
+        //    filter = $(this).val();
+        //    table = document.getElementById("download-forms-table-tbody");
+        //    tr = table.getElementsByTagName("tr");
+        //    var regionval = $('#regionDropdown :selected').val();
+        //    var roleval = $('#roleDropdown :selected').val();
+        //    if (filter == "All") {
+        //        // Loop through all table rows, and show anyrows that is hidden
+        //        for (i = 0; i < tr.length; i++) {
+        //            tr[i].style.display = "";
+        //        }
+        //    } else {
+        //        // Loop through all table rows, and hide those who don't match the search query
+        //        for (i = 0; i < tr.length; i++) {
+        //            td = tr[i].getElementsByTagName("td")[3];
+
+        //            var td1 = '';
+        //            if (regionval != 'All') {
+        //                td1 = tr[i].getElementsByTagName("td")[1];
+        //            }
+
+        //            var td2 = '';
+        //            if (roleval != 'All') {
+        //                td2 = tr[i].getElementsByTagName("td")[2];
+        //            }
+        //            if (td) {
+        //                if (td.innerHTML.indexOf(filter) > -1) {
+        //                    if (td1 != '') {
+        //                        if (td1.innerHTML.indexOf(regionval) > -1) {
+        //                            tr[i].style.display = "";
+        //                        } else {
+
+        //                            tr[i].style.display = "none";
+        //                        }
+        //                    }
+        //                    if (td2 != '') {
+        //                        if (td2.innerHTML.indexOf(roleval) > -1) {
+        //                            tr[i].style.display = "";
+        //                        } else {
+        //                            tr[i].style.display = "none";
+        //                        }
+        //                    }
+        //                    if (td1 == '' || td2 == '') {
+        //                        tr[i].style.display = "";
+        //                    }
+        //                } else {
+        //                    tr[i].style.display = "none";
+        //                }
+        //            } else {
+        //                var a = "No Records Found!!!";
+        //            }
+        //        }
+        //    }
+       // });
+    </script>
+
+
+}

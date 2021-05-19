@@ -1,0 +1,38 @@
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\TPPScoring.dll.config
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\TPPScoring.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\TPPScoring.pdb
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\obj\Debug\TPPScoring.csprojResolveAssemblyReference.cache
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\obj\Debug\TPPScoring.dll
+C:\Users\dhika.prathama\Documents\GitLab\TME Dashboard\TMEDashboard\obj\Debug\TPPScoring.pdb
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\TPPScoring.dll.config
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\TPPScoring.dll
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\TPPScoring.pdb
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\System.Web.Helpers.dll
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\System.Web.Mvc.dll
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\System.Web.Razor.dll
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.dll
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.dll
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.dll
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\System.Web.Razor.xml
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.xml
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.Deployment.xml
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\System.Web.Webpages.Razor.xml
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\System.Web.Helpers.xml
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\bin\System.Web.Mvc.xml
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\obj\Debug\TPPScoring.csprojResolveAssemblyReference.cache
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\obj\Debug\TPPScoring.dll
+C:\Users\dhika.prathama\Desktop\DAP\TPP Scoring\TME Dashboard\TMEDashboard\obj\Debug\TPPScoring.pdb

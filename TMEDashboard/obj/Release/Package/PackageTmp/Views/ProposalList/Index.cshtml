@@ -1,0 +1,168 @@
+﻿@using TMEDashboard.Models
+@{
+    ViewBag.Title = "Index";
+    List<ActivationhistoryModel> activation = ViewBag.Activation_history;
+
+}
+
+
+
+
+<style>
+    tbl-asd {
+        margin: 0 !important;
+    }
+
+    .th-asd, .td-asd {
+        white-space: nowrap;
+    }
+
+    .wrapper-asd.dataTables_wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    /*
+     * Comma Text Box Price Style
+     */
+    input[type='text'].commaTextbox {
+        padding-left: 1.9em;
+        text-align: right;
+    }
+
+    .commaTextbox-container {
+        position: relative;
+        color: #73879C;
+    }
+
+    .commaTextbox-container, .commaTextbox {
+        font-family: sans-serif;
+    }
+
+    .commaTextbox-currency {
+        position: absolute;
+        font-size: 15px;
+        line-height: 2.5em;
+        left: .5em;
+    }
+
+    #insert-activation-budget {
+        display: none;
+    }
+</style>
+
+
+<style>
+    .modal-dialog {
+        width: 100% !important;
+    }
+
+    .label-align {
+        text-align: left !important;
+    }
+</style>
+
+
+<div class="right_col" role="main">
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h3>Proposal Activation<small> </small></h3>
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+        <br />
+
+
+        <div>
+
+            <div class="clearfix"></div>
+
+
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 ">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>List Proposal</h2>
+
+
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card-box table-responsive">
+                                        <table id="datatable" class="table table-striped table-bordered" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th width="10">No.</th>
+                                                    <th width="100">Brand Name</th>
+                                                    <th width="100">Drug Category</th>
+                                                    <th width="100">Trademark Ownership</th>
+                                                    <th width="100">Target Launch</th>
+                                                    <th width="100">Requestor</th>
+                                                    <th width="100">Status</th>
+                                                    <th width="100">Detail</th>
+                                                </tr>
+                                            </thead>
+
+
+                                            <tbody>
+                                                @{ int i = 1; }
+                                                @foreach (var item in activation)
+                                                {
+                                                <tr>
+                                                    <td class="text-center" width="10">@i</td>
+                                                    <td>@item.brand_name</td>
+                                                    <td>@item.name_drug</td>
+                                                    <td>@item.trademark</td>
+                                                    <td>@Convert.ToDateTime(item.target_launch).ToString("dd/MM/yyyy")</td>
+                                                    <td>@item.request_by</td>
+                                                    <td>@item.activation_status</td>
+                                                    <td class="text-center">
+                                                        <a class="badge badge-primary center" href="~/proposallist/Detail?id_activation=@item.id_activation">Detail</a>
+                                                    </td>
+
+
+
+
+                                                </tr>
+                                                    { i = i + 1; }
+                                                }
+
+                                            </tbody>
+                                        </table>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="clearfix"></div>
+                <br />
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+

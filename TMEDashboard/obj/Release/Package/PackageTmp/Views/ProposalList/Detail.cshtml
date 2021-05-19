@@ -1,0 +1,415 @@
+﻿@using TMEDashboard.Models
+@{
+    ViewBag.Title = "Detail";
+    List<ActivationModel> activation = ViewBag.Activation;
+    List<ActivationhistoryModel> histori = ViewBag.Activationhistory;
+}
+
+<style>
+    tbl-asd {
+        margin: 0 !important;
+    }
+
+    .th-asd, .td-asd {
+        white-space: nowrap;
+    }
+
+    .wrapper-asd.dataTables_wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    /*
+     * Comma Text Box Price Style
+     */
+    input[type='text'].commaTextbox {
+        padding-left: 1.9em;
+        text-align: right;
+    }
+
+    .commaTextbox-container {
+        position: relative;
+        color: #73879C;
+    }
+
+    .commaTextbox-container, .commaTextbox {
+        font-family: sans-serif;
+    }
+
+    .commaTextbox-currency {
+        position: absolute;
+        font-size: 15px;
+        line-height: 2.5em;
+        left: .5em;
+    }
+
+    .yearpicker-container {
+        position: absolute;
+        color: #333;
+        width: 280px;
+        border: 1px solid #ced4da;
+        border-radius: 3px;
+        font-size: 1rem;
+        background-color: #fff
+    }
+
+    .yearpicker-header {
+        display: flex;
+        width: 100%;
+        height: 2.5rem;
+        border-bottom: 1px solid #444;
+        align-items: center;
+        justify-content: space-around
+    }
+
+    .yearpicker-next, .yearpicker-prev {
+        user-select: none;
+        cursor: pointer;
+        font-size: 2rem
+    }
+
+        .yearpicker-next:hover, .yearpicker-prev:hover {
+            color: #0094ff
+        }
+
+    .yearpicker-year {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: .5rem
+    }
+
+    .yearpicker-items {
+        list-style: none;
+        padding: 1rem .5rem;
+        flex: 0 0 33.3%;
+        width: 100%
+    }
+
+        .yearpicker-items:hover {
+            background-color: #EEE;
+            color: #555;
+            cursor: pointer
+        }
+
+        .yearpicker-items.selected {
+            color: #333
+        }
+
+    .hide {
+        display: none
+    }
+
+    .yearpicker-items.disabled {
+        pointer-events: none;
+        color: #bbb
+    }
+
+    .sku-drop {
+        width: 200px !important;
+    }
+</style>
+
+
+
+
+<div id="konten" class="right_col" role="main">
+
+
+    <div class="page-title">
+        <div class="title_left">
+            <h3>Proposal Detail</h3>
+            @*<button id="konvert">tes</button>*@
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+
+        <div class="col-md-12 col-sm-12 ">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Proposal Detail Information</h2>
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form class="form-horizontal form-label-left">
+                                @foreach (var item in activation)
+                                {
+
+                                <div class="modal-bodys">
+                                    <div class="item form-group">
+                                        <label class="col-form-label col-md-2 col-sm-2 label-align" for="first-name">
+                                            Activation Number
+                                        </label>
+                                        <div class="col-md-5 col-sm-5 ">
+                                            <input type="text" id="activation-id" name="id_activation" class="form-control" value="@item.id_activation" readonly>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="item form-group">
+                                        <label class="col-form-label col-md-2 col-sm-2 label-align" for="first-name">
+                                            Brand Name
+                                        </label>
+                                        <div class="col-md-5 col-sm-5 ">
+                                            <input type="text" id="approval-brand" name="approval_brand" value="@item.brand_name" class="form-control" readonly>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="item form-group">
+                                        <label class="col-form-label col-md-2 col-sm-2 label-align" for="first-name">
+                                            Drug Category
+                                        </label>
+                                        <div class="col-md-5 col-sm-5 ">
+                                            <input type="text" id="approval-drug" name="approval_drug" value="@item.name_drug" class="form-control" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="item form-group">
+                                        <label class="col-form-label col-md-2 col-sm-2 label-align" for="first-name">
+                                            Class
+                                        </label>
+                                        <div class="col-md-5 col-sm-5 ">
+                                            <input type="text" id="approval-class" name="approval_class" value="@item.name_class" class="form-control" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="item form-group">
+                                        <label class="col-form-label col-md-2 col-sm-2 label-align" for="first-name">
+                                            Date
+                                        </label>
+                                        <div class="col-md-5 col-sm-5 ">
+                                            <input type="text" id="approval-date" name="approval_date" value="@Convert.ToDateTime(item.date).ToString("dd/MM/yyyy")" class="form-control" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="item form-group">
+                                        <label class="col-form-label col-md-2 col-sm-2 label-align" for="first-name">
+                                            Target Launch
+                                        </label>
+                                        <div class="col-md-5 col-sm-5 ">
+                                            <input type="text" id="approval-target-launch" name="approval_target_launch" value="@Convert.ToDateTime(item.target_launch).ToString("dd/MM/yyyy")" class="form-control" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="item form-group">
+                                        <label class="col-form-label col-md-2 col-sm-2 label-align" for="first-name">
+                                            Description
+                                        </label>
+                                        <div class="col-md-10 col-sm-10">
+                                            <textarea id="approval-description" name="approval_description" class="form-control col-md-10 col-sm-10 " readonly>@item.description</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="item form-group">
+                                        <label class="col-form-label col-md-2 col-sm-2 label-align" for="first-name">
+                                            Note
+                                        </label>
+                                        <div class="col-md-10 col-sm-10">
+                                            <textarea id="approval-note" name="approval_note" class="form-control col-md-10 col-sm-10 " readonly>@item.note </textarea>
+                                        </div>
+                                    </div>
+                                    <div class="item form-group">
+                                        <label class="col-form-label col-md-2 col-sm-2 label-align" for="first-name">
+                                            Request By
+                                        </label>
+                                        <div class="col-md-5 col-sm-5 ">
+                                            <input type="text" id="approval-request" name="approval_request" value="@item.requestby" class="form-control" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="item form-group">
+                                        <label class="col-form-label col-md-2 col-sm-2 label-align" for="first-name">
+                                            Prepared By
+                                        </label>
+                                        <div class="col-md-5 col-sm-5 ">
+                                            <input type="text" id="approval-prepared-by" name="approval_prepared" value="@item.preparedby" class="form-control" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="item form-group">
+                                        <label class="col-form-label col-md-2 col-sm-2 label-align" for="first-name">
+                                            Status
+                                        </label>
+                                        <div class="col-md-5 col-sm-5 ">
+                                            <input type="text" id="approval-prepared-by" name="approval_prepared" value="@item.status" class="form-control" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="item form-group">
+                                        <label class="col-form-label col-md-2 col-sm-2 label-align" for="first-name">
+                                            Attachment Proposal
+                                        </label>
+                                        <div class="col-md-5 col-sm-5 ">
+                                            @if (item.activation_att.Count() > 0)
+                                            {
+                                                <ul>
+                                                    @foreach (var att in item.activation_att)
+                                                    {
+                                                        <li> <a href="@Url.Content("~/Uploads/" + att.activation_att_file_name)">@att.activation_att_file_name</a> </li>
+                                                    }
+                                                </ul>
+                                            }
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+
+
+                                    <button id="print_proposal" class="btn btn-success hide-print">Print</button>
+                                    <a class="btn btn-primary hide-print" href="~/task/Index" role="button">Close</a>
+
+                                </div>
+                                }
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>History Detail</h2>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card-box table-responsive">
+                                <table id="datatable" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th width="10">No.</th>
+                                            <th width="100">Activation Number</th>
+                                            <th width="100">Approval From</th>
+                                            <th width="100">Status</th>
+                                            <th width="100">Date</th>
+                                            <th width="100">Disposition</th>
+
+                                        </tr>
+                                    </thead>
+
+
+
+                                    <tbody>
+
+                                        @{ int i = 1; }
+                                        @foreach (var item in histori)
+                                        {
+                                            <tr>
+                                                <td class="text-center" width="10">@i</td>
+                                                <td class="text-center">@item.id_activation</td>
+                                                <td class="text-left">@item.name_id</td>
+
+
+                                                @if (Convert.ToInt32(item.activation_status) > 7)
+                                                {
+
+                                                    <td class="text-left">@item.activation_status_name</td>
+
+
+                                                }
+                                                else
+                                                {
+                                                    if (item.activation_history_status == "1")
+                                                    {
+                                                        <td class="text-left">@item.activation_status_name</td>
+                                                    }
+                                                    else
+                                                    {
+                                                        if (item.activation_history_status == "2")
+                                                        {
+                                                            if (Convert.ToInt32(item.activation_status) == 2)
+                                                            {
+                                                                <td class="text-left">Approved By Manager</td>
+                                                            }
+                                                            else if (Convert.ToInt32(item.activation_status) == 3)
+                                                            {
+                                                                <td class="text-left">Approved By Director</td>
+                                                            }
+                                                            else if (Convert.ToInt32(item.activation_status) == 4)
+                                                            {
+                                                                <td class="text-left">Approved By Legal Head</td>
+                                                            }
+                                                            else if (Convert.ToInt32(item.activation_status) == 5)
+                                                            {
+                                                                <td class="text-left">Approved By Vice President</td>
+                                                            }
+                                                            else if (Convert.ToInt32(item.activation_status) == 6)
+                                                            {
+                                                                <td class="text-left">Approved By President Director </td>
+                                                            }
+                                                            else if (Convert.ToInt32(item.activation_status) == 7)
+                                                            {
+                                                                <td class="text-left">Approved By Legal PIC</td>
+                                                            }
+
+                                                            else if (Convert.ToInt32(item.activation_status) == 1)
+                                                            {
+                                                                <td class="text-left">Submited</td>
+                                                            }
+
+
+                                                        }
+                                                        else
+                                                        {
+
+                                                        }
+
+                                                    }
+
+
+                                                }
+
+
+                                                <td class="text-center">@Convert.ToDateTime(item.modified_date).ToString("dd/MM/yyyy")</td>
+                                                <td class="text-center">@item.disposition</td>
+                                            </tr>
+                                            { i = i + 1; }
+                                        }
+
+
+
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section jsSection {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Apply plugin to our input boxes
+            $('.rupiah').commaTextbox(1)
+                .addClass('commaTextbox')
+                .wrap("<div class='commaTextbox-container'></div>")
+                .parent().prepend("<div class='commaTextbox-currency'>Rp</div>");
+
+            $('.input-number-format').commaTextbox();
+            $('.person').commaTextbox(1)
+                .addClass('commaTextbox')
+                .wrap("<div class='commaTextbox-container'></div>")
+                .parent().prepend("<div class='commaTextbox-currency'></div>");
+        });
+    </script>
+
+}
+
