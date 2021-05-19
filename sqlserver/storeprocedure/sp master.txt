@@ -1,0 +1,83 @@
+USE [Wadas]
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspMaster]    Script Date: 20/05/2021 06:48:28 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+-- =============================================
+-- Author:		Muslim Satrio
+-- Create date: 15 Jan 2021
+-- Description:	get User id
+-- =============================================
+CREATE PROCEDURE [dbo].[uspMaster]
+	@action varchar(30) = 'select',
+	@id_barang varchar(100) = null,
+	@id_perusahaan varchar(100) = null,
+	@nama_barang varchar(100) = null,
+	@nama_perusahaan varchar(100) = null,
+	@alamat varchar(100) = null
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+    IF @action = 'select_barang'
+		BEGIN
+			SELECT * FROM barang where status_barang=1
+			
+		END
+
+	ELSE IF @action = 'select_perusahaan'
+
+		BEGIN
+			SELECT * FROM perusahaan where status=1
+			
+		END
+
+	ELSE IF @action = 'insert_barang'
+
+		BEGIN
+			insert into barang
+			values(@nama_barang,'1')
+			
+		END
+
+		ELSE IF @action = 'insert_perusahaan'
+
+		BEGIN
+		insert into perusahaan
+			values(@nama_perusahaan,@alamat,'1')
+			
+		END
+
+	ELSE IF @action = 'update_barang'
+		BEGIN
+			update barang set nama_barang=@nama_barang where id=@id_barang
+		END
+
+	ELSE IF @action = 'update_perusahaan'
+		BEGIN
+			update perusahaan set nama=@nama_perusahaan,alamat=@alamat where id=@id_perusahaan
+		END
+
+	ELSE IF @action = 'delete_barang'
+
+		BEGIN
+			update barang set status_barang=-1 where id=@id_barang
+		END
+	ELSE IF @action = 'delete_perusahaan'
+
+		BEGIN
+			update perusahaan set status=-1 where id=@id_perusahaan
+		END
+
+END
+
+GO
+
+

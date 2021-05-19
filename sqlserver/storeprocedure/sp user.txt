@@ -1,0 +1,22 @@
+USE [Wadas]
+GO
+/****** Object:  StoredProcedure [dbo].[uspGetUserByID]    Script Date: 20/05/2021 06:47:36 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+-- =============================================
+-- Author:		Muslim Satrio
+-- Create date: 15 Jan 2021
+-- Description:	get User id
+-- =============================================
+Create PROCEDURE [dbo].[uspGetUserByID]
+	@user_id varchar(50)
+AS
+BEGIN
+	select * from users where user_id = @user_id
+END
+
+

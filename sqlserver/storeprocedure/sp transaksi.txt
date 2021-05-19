@@ -1,0 +1,80 @@
+USE [Wadas]
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspTransaksi]    Script Date: 20/05/2021 06:48:49 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+-- =============================================
+-- Author:		Muslim Satrio
+-- Create date: 15 Jan 2021
+-- Description:	get User id
+-- =============================================
+CREATE PROCEDURE [dbo].[uspTransaksi]
+	@action varchar(30) = 'select',
+	@id_barang varchar(100) = null,
+	@id_user varchar(100) = null,
+	@id_transaksi varchar(100) = null,
+	@id_perusahaan varchar(100) = null,
+	@nama_barang varchar(100) = null,
+	@nama_perusahaan varchar(100) = null,
+	@alamat varchar(100) = null,
+	@role_status int = 1
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+    IF @action = 'select_transaksi'
+		BEGIN
+			SELECT *
+			FROM transaksi t
+			left join barang b on b.id=t.id_barang
+			left join perusahaan p on p.id=t.id_perusahaan
+			left join users u on u.user_id=t.id_user
+			where t.status=1
+			
+		END
+
+	
+
+		ELSE IF @action = 'insert_transaksi'
+
+		BEGIN
+		insert into transaksi
+			values(@id_barang,@id_perusahaan,@id_user,GETDATE(),'1')
+			
+		END
+
+	ELSE IF @action = 'update_transaksi'
+		BEGIN
+			update transaksi set
+			id_barang=@id_barang ,
+			id_perusahaan=@id_perusahaan ,
+			date=GETDATE()
+			where id_transaksi=@id_transaksi
+		END
+
+	
+
+	ELSE IF @action = 'delete_transaksi'
+
+		BEGIN
+			update transaksi set status=-1 where id_transaksi=@id_transaksi
+		END
+	ELSE IF @action = 'count_transaksi_day'
+
+		BEGIN
+			select count(id_transaksi) from transaksi where date = cast(getdate() as Date)
+		END
+	--select DATEADD(day, DATEDIFF(day, 0, GETDATE()), 0)
+	-- select day(GETDATE())
+END
+
+GO
+
+

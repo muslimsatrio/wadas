@@ -1,0 +1,9 @@
+1. create db dengan nama wadas
+2. create tabel:barang,perusahaan,roles,transaksi,users
+3. create storeprocedure:uspGetUserByid,uspMaster,uspTransaksi
+4. create user contoh: 
+insert into users
+values('Muslim.Satrio',1) 
+insert into roles
+values('user',1) 
+5. login dengan password : wadas

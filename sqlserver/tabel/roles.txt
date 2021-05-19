@@ -1,0 +1,16 @@
+USE [Wadas]
+GO
+
+/****** Object:  Table [dbo].[roles]    Script Date: 20/05/2021 06:43:04 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[roles](
+	[role_id] [int] IDENTITY(1,1) NOT NULL,
+	[role_name] [varchar](50) NULL,
+	[status] [int] NULL
+) ON [PRIMARY]
+GO

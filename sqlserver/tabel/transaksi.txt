@@ -1,0 +1,19 @@
+USE [Wadas]
+GO
+
+/****** Object:  Table [dbo].[transaksi]    Script Date: 20/05/2021 06:43:16 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[transaksi](
+	[id_transaksi] [int] IDENTITY(1,1) NOT NULL,
+	[id_barang] [int] NULL,
+	[id_perusahaan] [int] NULL,
+	[id_user] [varchar](50) NULL,
+	[date] [varchar](50) NULL,
+	[status] [int] NULL
+) ON [PRIMARY]
+GO
