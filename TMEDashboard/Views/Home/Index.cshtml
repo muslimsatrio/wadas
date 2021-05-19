@@ -1,7 +1,7 @@
 ﻿@using TMEDashboard.Models
 @{
     ViewBag.Title = "Index";
-    
+    TransaksiModel total = ViewBag.count;
 
 }
 
@@ -31,6 +31,7 @@
                             <h5 class="text-center"><strong>Total Transaksi Harian</strong></h5>
 
                             <div class="tme-gauge gauge-pospecting text-center">
+                                @total.id_barang
 
                             </div>
                         </a>

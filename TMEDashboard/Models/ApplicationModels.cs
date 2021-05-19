@@ -38,7 +38,9 @@ namespace TMEDashboard.Models
     {
         public string id_transaksi { get; set; }
         public string id_barang { get; set; }
+        public string nama_barang { get; set; }
         public string id_perusahaan { get; set; }
+        public string nama_perusahaan { get; set; }
         public string id_user { get; set; }
         public string date { get; set; }
         public string status { get; set; }

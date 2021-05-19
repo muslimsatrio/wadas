@@ -23,11 +23,28 @@ namespace TMEDashboard.Controllers
                 return RedirectToAction("Index", "Login");
             object emp = Session["username"];
 
-         
+            ViewBag.count = countData();
 
             return View();
         }
-       
+
+
+        private TransaksiModel countData()
+        {
+            TransaksiModel Transaksi = new TransaksiModel();
+            SqlConnection conn = new SqlConnection(mainConnection);
+            SqlCommand cmd = new SqlCommand("uspTransaksi", conn);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@action", "count_transaksi_day");
+            
+            conn.Open();
+            Transaksi.id_barang = cmd.ExecuteScalar().ToString();
+
+
+            conn.Close();
+
+            return Transaksi;
+        }
 
         public bool isLoggedIn()
         {

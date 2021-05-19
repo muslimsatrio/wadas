@@ -243,12 +243,61 @@
         var id = $(this).attr("data-barang-id");
         var barang = $(this).attr("data-barang-nama");
 
-
         $('#delete-id-barang').val(id);
         $('#delete-nama-barang').val(barang);
 
     });
 
+
+    //Perusahaan
+    $(document).on('click', '.btn-update-perusahaan', function () {
+        var id = $(this).attr("data-perusahaan-id");
+        var perusahaan = $(this).attr("data-perusahaan-nama");
+        var alamat = $(this).attr("data-perusahaan-alamat");
+
+
+        $('#update-id-perusahaan').val(id);
+        $('#update-nama-perusahaan').val(perusahaan);
+        $('#update-alamat-perusahaan').val(alamat);
+
+    });
+
+    $(document).on('click', '.btn-delete-perusahaan', function () {
+        var id = $(this).attr("data-perusahaan-id");
+        var perusahaan = $(this).attr("data-perusahaan-nama");
+        var alamat = $(this).attr("data-perusahaan-alamat");
+
+        $('#delete-id-perusahaan').val(id);
+        $('#delete-nama-perusahaan').val(perusahaan);
+        $('#delete-alamat-perusahaan').val(alamat);
+
+    });
+
+    //Transaksi
+    $(document).on('click', '.btn-update-transaksi', function () {
+        var id_transaksi = $(this).attr("data-transaksi-id");
+        var id_perusahaan= $(this).attr("data-transaksi-barang");
+        var id_barang = $(this).attr("data-transaksi-perusahaan");
+      
+
+        $('#update-transaksi-id').val(id_transaksi);
+        $('#transaksi-update-id-perusahaan').val(id_perusahaan);
+        $('#transaksi-update-id-barang').val(id_barang);
+        
+
+    });
+    $(document).on('click', '.btn-delete-transaksi', function () {
+        var id_transaksi = $(this).attr("data-transaksi-id");
+        var id_perusahaan = $(this).attr("data-transaksi-barang");
+        var id_barang = $(this).attr("data-transaksi-perusahaan");
+
+
+        $('#delete-transaksi-id').val(id_transaksi);
+        $('#transaksi-delete-id-perusahaan').val(id_perusahaan);
+        $('#transaksi-delete-id-barang').val(id_barang);
+
+
+    });
     
 
     //=====================================================================
@@ -259,7 +308,7 @@
 
         buttons: [
 
-            'excel', 'pdf', 'print'
+            'excel', 'csv', 'print'
 
         ]
 

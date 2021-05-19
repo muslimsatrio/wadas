@@ -15,6 +15,8 @@ namespace LAMPDashboard.Controllers
         // GET: barang
         public ActionResult Index()
         {
+            if (!isLoggedIn())
+                return RedirectToAction("Index", "Login");
             ViewBag.barang = barangData();
            
             return View();
@@ -93,7 +95,7 @@ namespace LAMPDashboard.Controllers
 
         }
 
-        private List<BarangModel> barangData()
+        public List<BarangModel> barangData()
         {
             List<BarangModel> items = new List<BarangModel>();
 
@@ -115,6 +117,7 @@ namespace LAMPDashboard.Controllers
                 }
             }
             conn.Close();
+
 
             return items;
         }
