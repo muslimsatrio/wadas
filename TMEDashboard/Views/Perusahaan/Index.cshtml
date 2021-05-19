@@ -1,0 +1,201 @@
+﻿@using TMEDashboard.Models
+@{
+    ViewBag.Title = "Index";
+    List<PerusahaanModel> perusahaan = ViewBag.perusahaan;
+
+}
+
+<div class="right_col" role="main">
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h3>Master Perusahaan<small> </small></h3>
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+        <br />
+
+
+        <div>
+
+            <div class="clearfix"></div>
+
+
+
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="task" role="tabpanel" aria-labelledby="task-tab">
+                    <div class="float-right">
+                        <button type="button" class="btn btn-sm btn-info" data-toggle="modal" href='#modal-add-perusahaan'>Add New Perusahaan</button>
+                    </div>
+                    <div class="clearfix"></div>
+                    <table id="datatable-custom-muslim" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                            <tr>
+
+                                <th width="10">No</th>
+                                <th width="70">Nama perusahaan</th>
+                                <th width="70">Alamat</th>
+
+                                <th width="10">Action</th>
+                            </tr>
+                        </thead>
+
+
+                        <tbody>
+                            @{ int i = 1; }
+                            @foreach (var item in perusahaan)
+                            {
+
+                            <tr>
+
+                                <td class="text-md-center">@i</td>
+                                <td class="text-md-center">@item.nama</td>
+                                <td class="text-md-center">@item.alamat</td>
+
+
+                                <td class="text-center">
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-sm btn-warning btn-update-perusahaan" type="button" data-toggle="modal" href='#modal-update-perusahaan'
+                                                data-perusahaan-id="@item.id" data-perusahaan-nama="@item.nama"  data-perusahaan-alamat="@item.alamat">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-danger btn-delete-perusahaan" type="button" data-toggle="modal" href='#modal-delete-perusahaan'
+                                                data-perusahaan-id="@item.id" data-perusahaan-nama="@item.nama" data-perusahaan-alamat="@item.alamat">
+                                            <i class="fa fa-remove"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                                { i = i + 1; }
+
+                            }
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="clearfix"></div>
+            <br />
+
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div class="modal fade" id="modal-add-perusahaan">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="demo-form2" action="~/perusahaan/perusahaan_insert" method="post" data-parsley-validate class="form-horizontal form-label-left">
+                <div class="modal-header">
+                    <h4 class="modal-title">Add New perusahaan</h4>
+                    <div class="clearfix"></div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <br />
+                </div>
+                <div class="modal-body">
+
+                    <div class="item form-group">
+                        <label for="middle-name" class="col-form-label col-md-3 col-sm-3 label-align">Nama perusahaan</label>
+                        <div class="col-md-9 col-sm-9 ">
+                            <input type="text" class="form-control" id="insert-nama-perusahaan" name="nama_perusahaan" placeholder=" Please Input Nama perusahaan">
+
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label for="middle-name" class="col-form-label col-md-3 col-sm-3 label-align">Alamat perusahaan</label>
+                        <div class="col-md-9 col-sm-9 ">
+                            <input type="text" class="form-control" id="insert-alamat-perusahaan" name="alamat_perusahaan" placeholder=" Please Input Alamat perusahaan">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-update-perusahaan">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="demo-form2" action="~/perusahaan/perusahaan_update" method="post" data-parsley-validate class="form-horizontal form-label-left">
+                <div class="modal-header">
+                    <h4 class="modal-title">Update perusahaan</h4>
+                    <div class="clearfix"></div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <br />
+                </div>
+                <div class="modal-body">
+
+                    <div class="item form-group">
+                        <label for="middle-name" class="col-form-label col-md-3 col-sm-3 label-align">Nama perusahaan</label>
+                        <div class="col-md-9 col-sm-9 ">
+                            <input type="text" hidden class="form-control" id="update-id-perusahaan" name="update_id_perusahaan">
+                            <input type="text" class="form-control" id="update-nama-perusahaan" name="update_nama_perusahaan">
+                            <input type="text" class="form-control" id="update-alamat-perusahaan" name="update_alamat_perusahaan">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-delete-perusahaan">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="demo-form2" action="~/perusahaan/perusahaan_delete" method="post" data-parsley-validate class="form-horizontal form-label-left">
+                <div class="modal-header">
+                    <h4 class="modal-title">Delete perusahaan</h4>
+                    <div class="clearfix"></div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <br />
+                </div>
+                <div class="modal-body">
+
+                    <div class="item form-group">
+                        <label for="middle-name" class="col-form-label col-md-3 col-sm-3 label-align">Nama perusahaan</label>
+                        <div class="col-md-9 col-sm-9 ">
+                            <input type="text" hidden class="form-control" id="delete-id-perusahaan" name="delete_id_perusahaan">
+                            <input type="text" class="form-control" id="delete-nama-perusahaan" name="delete_nama_perusahaan" readonly>
+                            <input type="text" class="form-control" id="delete-alamat-perusahaan" name="delete_alamat_perusahaan" readonly>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

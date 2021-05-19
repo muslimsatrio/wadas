@@ -226,51 +226,30 @@
         }
     });
 
-    
-    //Update proposal legal=============================================================
-    $(document).on('click', '.btn-update-legal', function () {
-
-        var id_activation = $(this).attr("data-activation");
-        var brand = $(this).attr("data-brand");
-        var drug = $(this).attr("data-drug");
-        var class_id = $(this).attr("data-class");
-        var date = $(this).attr("data-date");
-        var target = $(this).attr("data-launch");
-        var trade = $(this).attr("data-trade");
-        var note = $(this).attr("data-note");
-        var desc = $(this).attr("data-desc");
+    //=====================================================================
+    //BARANG
+    $(document).on('click', '.btn-update-barang', function () {
+        var id = $(this).attr("data-barang-id");
+        var barang = $(this).attr("data-barang-nama");
       
 
-        $('#edit-id-activation').val(id_activation);
-        $('#edit-brand-name').val(brand);
-        $('#edit-drug-category').val(drug);
-        $('#edit-class-category').val(class_id);
-        $('#edit-activation-start').val(date);
-        $('#edit-activation-end').val(target);
-        $('#edit-trademark-name').val(trade);
-        $('#edit-activation-note').val(note);
-        $('#edit-activation-desc').val(desc);
+        $('#update-id-barang').val(id);
+        $('#update-nama-barang').val(barang);
+
     });
+
+
+    $(document).on('click', '.btn-delete-barang', function () {
+        var id = $(this).attr("data-barang-id");
+        var barang = $(this).attr("data-barang-nama");
+
+
+        $('#delete-id-barang').val(id);
+        $('#delete-nama-barang').val(barang);
+
+    });
+
     
-
-
-    //// Muslim ==============================================================
-    //$(document).on('click', '.btn-update-phone', function () {
-
-    //    var id = $(this).attr("data-id");
-    //    var job = $(this).attr("data-job");
-    //    var name = $(this).attr("data-name");
-    //    var ext = $(this).attr("data-ext");
-    //    var status = $(this).attr("data-status");
-       
-
-    //    $('#edit-id-phone').val(id);
-    //    $('#edit-job-name').val(job);
-    //    $('#edit-name').val(name);
-    //    $('#edit-ext').val(ext);
-    //    $('#edit-status').val(status);
-      
-    //});
 
     //=====================================================================
     //tabel
@@ -352,31 +331,7 @@
         autoclose: true,
     })
 
-    $('#insert-activation-end').on('change', function () {
-    var from = $("#insert-activation-start").val();
-        var to = $("#insert-activation-end").val();
-        //alert(from);
-        //alert(to);
-    $('.msdate').hide(0)/*.delay(3000).hide(0)*/;
-        if (from > to)
-        {
-            //alert("invalid");
-                $('#insert-activation-end').datepicker('update', from);
-                $('#insert-activation-end').val(from);
-                //alert("Invalid End Date");
-                $('.msdate').show(0)/*.delay(3000).hide(0)*/;
-        }
-
-
-        else
-         {
-                 //alert("Ok");
-          }
-
-
-
-    });
-
+   
 
 
     $('#print_proposal').on('click', function () {
